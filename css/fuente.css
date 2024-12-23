@@ -1,0 +1,87 @@
+@import url(./paleta.css);
+
+/* Importa la fuente de Google Fonts o de un archivo local */
+@font-face {
+    font-family: "Brigends Expanded";
+    src: url("../fuente/Brigends Expanded.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Brigends Expanded 2";
+    src: url("../fuente/Brigends Expanded.otf") format("opentype");
+    font-weight: 100;
+}
+
+/* Aplica la fuente a todo el documento */
+body {
+    font-family: "Brigends Expanded", serif;
+    /* Usa Brigends Expanded como fuente principal */
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Puedes añadir más estilos para diferentes fuentes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Brigends Expanded", sans-serif;
+    color: var(--principal);
+    /* Usa Brigends Expanded para los encabezados */
+}
+
+h1 {
+    font-size: 10vw;
+    text-align: center;
+    color: #22264B;
+}
+
+.roboto-thin {
+    font-family: "Brigends Expanded", serif;
+    font-weight: 100;
+}
+
+.roboto-regular {
+    font-family: "Brigends Expanded", serif;
+    font-weight: 400;
+}
+
+.exo-2-bold {
+    font-family: "Brigends Expanded", sans-serif;
+    font-weight: 700;
+}
+
+
+/* Aplica la fuente Brigends Expanded a los párrafos */
+p {
+    font-family: "Brigends Expanded 2", serif;
+    color: var(--secundario2);
+    font-style: normal;
+}
+
+ul {
+    font-family: "Brigends Expanded 2", serif;
+    color: var(--acento);
+    font-style: normal;
+}
+
+/* Aplica la fuente Brigends Expanded a los enlaces */
+a {
+    font-family: "Brigends Expanded", serif;
+    /* Usa Brigends Expanded para los enlaces */
+    font-weight: 100;
+    font-style: normal;
+    color: #f6f6f6;
+}
+
+/* Aplica la fuente Brigends Expanded a las listas y sus elementos */
+ul,
+li {
+    font-family: "Brigends Expanded", serif;
+    /* Usa Brigends Expanded para las listas y elementos de lista */
+    font-weight: 400;
+    font-style: normal;
+    color: #f6f6f6;
+}
