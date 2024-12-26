@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Alejandro Carmona</title>
+    <link rel="stylesheet" href="./css/paleta.css">
+    <link rel="stylesheet" href="./css/fuente.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/animaciones.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .curva {
+            width: 100%;
+            height: 100px;
+            background: url('data:image/svg+xml,<svg width="100%" height="100" xmlns="http://www.w3.org/2000/svg"><path d="M0,50 C150,0 350,100 500,50 L500,0 L0,0 Z" fill="transparent" stroke="#2ecc71" stroke-width="5"/></svg>') no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fondo"></div>
+    <header>
+        <nav>
+            <a href="">Instagram</a>
+            <a href="">Linkedin</a>
+            <a href="">Twitter</a>
+        </nav>
+        <div class="nombreYapellido">
+            <h1 class="nombre">ALEJANDRO</h1>
+            <h1 class="apellido">CARMONA</h1>
+        </div>
+        <ul class="descripcion">
+            <li class="cruz">
+                <img src="./img/cruz.png" alt="">
+            </li>
+            <li id="freelance">Freelance</li>
+            <li class="cruz">
+                <img src="./img/cruz.png" alt="">
+            </li>
+            <li id="creativo">Creativo</li>
+            <li class="cruz">
+                <img src="./img/cruz.png" alt="">
+            </li>
+            <li id="desarrollador">Desarrollador</li>
+            <li class="cruz">
+                <img src="./img/cruz.png" alt="">
+            </li>
+            <li id="diseñador">Diseñador</li>
+            <li class="cruz">
+                <img src="./img/cruz.png" alt="">
+            </li>
+        </ul>
+    </header>
+    <main class="contenedorMain">
+        <div class="saludo">
+            <h3 class="hola">¡Hola!</h3>
+            <p>Soy Alejandro Carmona, estudiante de 2º de Desarrollo de Aplicaciones Web</p>
+        </div>
+
+        <div class="imagenesPresentacion">
+
+            <div class="imagen2">
+            </div>
+        </div>
+        <div class="divBotonLimpiar">
+            <button class="botonLimpiar">LIMPIAR</button>
+        </div>
+
+        <h2 class="pregunta">¿CON QUE TRABAJO?</h2>
+        <div class="stack">
+
+            <div class="frontEnd">
+                <h3>FRONT END</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+            </div>
+            <div class="backEnd">
+                <h3>BACK END</h3>
+                <p>SQL</p>
+                <p>JAVA</p>
+                <p>PHP</p>
+                <p>J2EE</p>
+            </div>
+            <div class="herramientas">
+                <h3>HERRAMIENTAS</h3>
+                <p>VISUAL STUDIO CODE</p>
+                <p>APACHE NETBEANS</p>
+                <p>GIT</p>
+                <p>ORACLE SQL DEVELOPER</p>
+            </div>
+        </div>
+        <div class="contacto">
+            <form action="">
+
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+    <script type="module" src="./js/fondo.js"></script>
+    <script type="module" src="./js/imagenAnimacion.js"></script>
+    <script type="module" src="./js/animacionStack.js"></script>
+    <script type="module" src="./js/animacionImagen.js"></script>
+    <script>
+        // Inicializar EmailJS con tu ID de usuario
+        emailjs.init("YOUR_USER_ID"); // Reemplaza "YOUR_USER_ID" con tu propio User ID
+
+        // Capturar el evento de envío del formulario
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
+
+            // Capturar los valores del formulario
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Enviar el correo usando EmailJS
+            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+                from_name: name,
+                from_email: email,
+                message: message
+            })
+                .then(function (response) {
+                    alert("¡Correo enviado con éxito!");
+                }, function (error) {
+                    alert("Error al enviar el correo: " + JSON.stringify(error));
+                });
+        });
+    </script>
+</body>
+
+</html>

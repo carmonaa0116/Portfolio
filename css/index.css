@@ -1,0 +1,208 @@
+html,
+body {
+
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nombreYapellido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nombre {
+    position: relative;
+    top: -100px;
+    opacity: 0;
+    transition: 0.3s;
+    animation: abajoArriba 1s ease-in-out forwards;
+
+    margin: 0;
+    padding: 0;
+}
+
+.apellido {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    transition: 0.3s;
+    animation: arribaAbajo 1s ease-in-out forwards;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.saludo {
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hola {
+    width: max-content;
+    animation: saludar 0.3s ease-in-out 2s;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.hola:hover {
+    animation: shake 0.5s infinite;
+}
+
+.imagenesPresentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.imagen1 {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.imagen2 {
+    background-image: url("./img/miFoto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    position: relative;
+    transition: transform 0.3s ease;
+    /* Agregado para una transición suave */
+}
+
+
+.imagen1>h2 {
+    text-align: center;
+}
+
+.item {
+    transition: 0.3s;
+}
+
+.imagenFlecha {
+    transform: rotate(-15deg);
+    /* Comienza siendo invisible */
+    position: relative;
+    animation: moverFlecha 3s ease-in-out infinite;
+    /* Animación infinita */
+}
+
+.imagen2>img,
+.imagen1>img {
+    width: 40vw;
+    height: auto;
+}
+
+
+
+.pregunta {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.stack {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5vh;
+    gap: 1vw;
+
+}
+
+.stack>div {
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 1px 10px 10px #22264B;
+    background-color: var(--acento);
+    margin: 1vw;
+    padding: 2vw;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.stack>div:hover {
+    animation: flotar 1s infinite;
+}
+
+.stack>div>p:hover {
+    animation: shake 0.3s infinite;
+}
+
+.listaStack>p {
+    list-style: none;
+    margin-left: 0;
+}
+.divBotonLimpiar {
+
+    width: 75%;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.botonLimpiar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 10px 20px;
+    background-color: var(--principal);
+    color: var(--secundario2);
+    border: none;
+    border-radius: 2px;
+    box-shadow: 1px 10px 10px #22264B;
+    transition: 0.3s;
+
+}
+
+.botonLimpiar:hover {
+    background-color: var(--acento);
+    color: var(--principal);
+    transform: scale(1.10);
+    transition: 0.3s;
+}
+
+
+.flexeo {
+    border: 1px solid blue;
+
+    width: 80vw;
+    height: auto;
+}
+
+.trayectoria {
+    border: 1px solid black;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+@media screen and (max-height: 576px) {
+
+    html,
+    body {
+        width: 97.9vw;
+    }
+}
