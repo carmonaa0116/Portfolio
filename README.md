@@ -17,3 +17,23 @@ Para visualizar el proyecto correctamente, necesitas un navegador web moderno (c
 1. Clona el repositorio en tu máquina local:
    ```bash
    git clone https://github.com/carmonaa0116/portfolio-final.git
+   ```
+2. Navega hasta el directorio del proyecto:
+   ```
+   cd portfolio-final
+   ```
+3. Abre el archivo index.html en tu navegador para ver el portfolio.
+
+## Personalización
+Puedes modificar los archivos dentro de las carpetas css, js o img para personalizar el contenido y el estilo del portfolio.
+
+## Recursos útiles
+Si deseas aprender a crear un portafolio o CV en una sola página, visita el siguiente enlace:
+https://roadmap.sh/projects/single-page-cv
+
+## Créditos
+- Diseño y desarrollo: carmonaa0116
+- Recursos de fuentes y gráficos están incluidos en el archivo comprimido brigends_expanded.zip.
+
+## Licencia
+Este proyecto está bajo la licencia MIT. Puedes usar, modificar y distribuir este proyecto libremente.
