@@ -103,32 +103,15 @@
     <script type="module" src="./js/imagenAnimacion.js"></script>
     <script type="module" src="./js/animacionStack.js"></script>
     <script type="module" src="./js/animacionImagen.js"></script>
-    <script>
-        // Inicializar EmailJS con tu ID de usuario
-        emailjs.init("YOUR_USER_ID"); // Reemplaza "YOUR_USER_ID" con tu propio User ID
-
-        // Capturar el evento de envío del formulario
-        document.getElementById("contact-form").addEventListener("submit", function (event) {
-            event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
-
-            // Capturar los valores del formulario
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
-
-            // Enviar el correo usando EmailJS
-            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
-                from_name: name,
-                from_email: email,
-                message: message
-            })
-                .then(function (response) {
-                    alert("¡Correo enviado con éxito!");
-                }, function (error) {
-                    alert("Error al enviar el correo: " + JSON.stringify(error));
-                });
-        });
-    </script>
+<script type="text/javascript">
+  window._mfq = window._mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.defer = true;
+    mf.src = "//cdn.mouseflow.com/projects/6b8758b8-1576-4414-a613-f6c0485327a6.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script>
 </body>
 
 </html>
